@@ -1,0 +1,206 @@
+:root {
+    --text: #0f1a14;
+    --background: #f6faf7;
+    --primary: #1e7b4f;
+    --secondary: #cfe8d9;
+    --accent: #f2a541;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-mark {
+    background-color: var(--accent);
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.tagline {
+    margin: 0;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 0.8em 1em;
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.current {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+main {
+    padding: 1em 2em 2em;
+}
+
+#hero {
+    background-image: linear-gradient(135deg, #1e7b4f, #134d32);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 3em 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.hero-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-text {
+    font-size: 1.2em;
+    margin: 0.5em 0 1.5em;
+}
+
+h2,
+h3 {
+    color: var(--primary);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #e08e1f;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 1.5em 0;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: var(--background);
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1em 1.5em 1.5em;
+}
+
+.card h3 {
+    margin-top: 0.5em;
+}
+
+.checklist {
+    padding-left: 1.5em;
+}
+
+.checklist li {
+    margin-bottom: 0.4em;
+}
+
+footer {
+    background-color: var(--text);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 1.5em;
+}
+
+footer a {
+    color: var(--secondary);
+}
+
+.footer-links a {
+    margin: 0 0.6em;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .hero-title {
+        font-size: 1.5em;
+    }
+}
